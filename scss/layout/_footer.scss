@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+/**
+ * Footer styling
+ */
+
+.footer {
+  background-color: $brand-dodgerBlue;
+  font-family: $proxima-nova;
+  color: azure;
+
+  .footer__text {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 15px 15px 15px 0px;
+    
+    p {
+      margin-bottom: 0px;
+      color: azure;
+    }
+  }
+  .footer__made-by {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+      p{
+        color: azure;
+    }
+  }
+  .footer__social-icons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,36 @@
+/**
+ * Jumbotron custom style
+ */
+
+.mainHello{
+
+    //para seguir el diseño del roundboder descomentar esto.
+    // background-color: whitesmoke;
+    // padding-left: 1rem;
+
+
+    .mainHello__title{
+        font-weight: $black;
+    }
+
+    .mainHello__sub{
+        font-family: $proxima-nova;
+        font-weight: $medium;
+        color: $brand-dodgerBlue;
+    }
+
+}
+
+.mainHello__img {
+    padding: 0px!important;
+}
+
+.--round-border-right {
+    border-top-right-radius: 0.6rem!important;
+    border-bottom-right-radius: 0.6rem!important;
+}
+
+.--round-border-left {
+    border-top-left-radius: 0.6rem!important;
+    border-bottom-left-radius: 0.6rem!important;
+}

@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//Font family
+
+$sofia-pro: sofia-pro, sans-serif;
+$proxima-nova: proxima-nova, sans-serif;
+
+//Font weights
+
+$regular:400;
+$medium:500;
+$semibold:600;
+$bold:700;
+$black:900;
+
+// Main brand colors
+
+$brand-dodgerBlue: rgb(75, 148, 242);
+$brand-jonquilYellow: rgb(249, 200, 14);
+$brand-violet: rgb(101, 102, 204);
+$brand-platinum: rgb(234, 236, 234);
+
+// Fixed height for proyectos cards
+
+$fix-height: 300px

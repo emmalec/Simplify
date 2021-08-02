@@ -1,0 +1,53 @@
+/**
+ * Card Proyectos style
+ */
+
+.card-proyectos {
+    padding: 40px 0px;
+    height: $fix-height;
+    border-radius: .6rem;
+    margin: 20px 0px;
+    transition: 0.5s ease-out;
+
+    &:hover {
+        height: $fix-height*1.3;
+        transition: 0.5s ease-in;
+    }
+
+    .info__title {
+        font-size: 35px;
+    }
+
+    .info__title a {
+        color: #d7d7d7;
+    }
+
+    .info__description {
+        color: #d7d7d7;
+    }
+
+}
+
+.card-proyectos--barber {
+    background-image: url(https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
+    @include background-cover;
+}
+
+.card-proyectos--simplify {
+    background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    @include background-cover;
+}
+
+.card-proyectos--HRMS {
+    background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    @include background-cover;
+}
+
+.--dodgerBlue {
+    color: $brand-dodgerBlue!important;
+}
+
+.--jonquilYellow {
+    color: $brand-jonquilYellow!important;
+}
+

@@ -1,0 +1,33 @@
+/**
+ * Section servicios style
+ */
+
+.section-servicios {
+    background-color: hsla(120, 5%, 92%, 0.4);
+    border-radius: .6rem;
+    margin: 40px 0px 40px 0px;
+
+    .section-servicios__title {
+        font-family: sofia-pro, sans-serif;
+        font-size: 35px;
+        color: #6566cc;
+        padding-top: 35px;
+        margin: 0%;
+    }
+
+    .section-servicios__text {
+        font-family: proxima-nova,sans-serif;
+        margin: 20px 0px 20px 0px;
+    }
+
+        strong {
+            font-family: sofia-pro, sans-serif;
+            color: #4b94f2;
+            font-weight: 400;
+    } 
+
+    .section-servicios__btn {
+        margin-bottom: 20px;
+    }
+
+}

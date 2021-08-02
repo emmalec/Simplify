@@ -1,0 +1,39 @@
+**INDEX**
+
+line 7 index.html - Titulo del Home y breve descripcion de la pagina
+line 8 index.html - Descripcion del emprendimiento 
+line 9 index.html - Agrego Keywords a mi proyecto
+
+**Servicios**
+
+line 7 index.html - Titulo de la pagina servicios y breve descripcion de la pagina
+line 8 index.html - Descripcion del emprendimiento 
+line 9 index.html - Agrego Keywords a mi proyecto
+
+**Proyectos**
+
+line 7 index.html - Titulo de la pagina proyectos y breve descripcion de la pagina
+line 8 index.html - Descripcion del emprendimiento 
+line 9 index.html - Agrego Keywords a mi proyecto
+
+**nosotros**
+
+line 7 index.html - Titulo de la pagina nosotros y breve descripcion de la pagina
+line 8 index.html - Descripcion del emprendimiento 
+line 9 index.html - Agrego Keywords a mi proyecto
+
+**contacto**
+
+line 7 index.html - Titulo de la pagina contactos y breve descripcion de la pagina
+line 8 index.html - Descripcion del emprendimiento 
+line 9 index.html - Agrego Keywords a mi proyecto
+
+**ERROR 404**
+
+Agregue una pagina /views/error404.html que dirige al error de pagina no encontrada en los links del "more" en el index.
+
+**IMGS**
+
+Las imagenes estan optimizadas y la page 404 utiliza un SVG
+
+Agregue favicon a todas las secciones

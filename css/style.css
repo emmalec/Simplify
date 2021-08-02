@@ -1,0 +1,258 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+/**
+ * Basic styles
+ */
+a {
+  color: #4b94f2;
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400; }
+
+@media (min-width: 1200px) {
+  .width-wrapper {
+    max-width: 1366px;
+    padding-right: 95px;
+    padding-left: 95px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.--round-border {
+  border-radius: 0.6rem; }
+
+/**
+ * Basic typography style for copy text
+ */
+h1 {
+  font-family: sofia-pro, sans-serif;
+  color: #6566cc;
+  font-weight: 900; }
+
+h3 {
+  font-family: sofia-pro, sans-serif;
+  color: #4b94f2;
+  font-weight: 600; }
+
+p {
+  font-family: proxima-nova, sans-serif;
+  color: #000;
+  font-weight: 400; }
+
+/**
+ * Footer styling
+ */
+.footer {
+  background-color: #4b94f2;
+  font-family: proxima-nova, sans-serif;
+  color: azure; }
+  .footer .footer__text {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 15px 15px 15px 0px; }
+    .footer .footer__text p {
+      margin-bottom: 0px;
+      color: azure; }
+  .footer .footer__made-by {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around; }
+    .footer .footer__made-by p {
+      color: azure; }
+  .footer .footer__social-icons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem; }
+
+/**
+ * NavBar style
+ */
+.navbar-nav li {
+  border-right: 1px solid #646364ab; }
+
+.navbar-nav li:last-child {
+  border-right: 0px; }
+
+.navbar-nav a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #4b94f2 !important;
+  padding: -0px 15px 0px 15px; }
+
+.navbar-brand {
+  margin-left: 5% !important; }
+  .navbar-brand img {
+    width: 80%; }
+
+/**
+ * info styling
+ */
+/**
+ * Section servicios style
+ */
+.section-servicios {
+  background-color: rgba(234, 236, 234, 0.4);
+  border-radius: .6rem;
+  margin: 40px 0px 40px 0px; }
+  .section-servicios .section-servicios__title {
+    font-family: sofia-pro, sans-serif;
+    font-size: 35px;
+    color: #6566cc;
+    padding-top: 35px;
+    margin: 0%; }
+  .section-servicios .section-servicios__text {
+    font-family: proxima-nova,sans-serif;
+    margin: 20px 0px 20px 0px; }
+  .section-servicios strong {
+    font-family: sofia-pro, sans-serif;
+    color: #4b94f2;
+    font-weight: 400; }
+  .section-servicios .section-servicios__btn {
+    margin-bottom: 20px; }
+
+/**
+ * Jumbotron custom style
+ */
+.mainHello .mainHello__title {
+  font-weight: 900; }
+
+.mainHello .mainHello__sub {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  color: #4b94f2; }
+
+.mainHello__img {
+  padding: 0px !important; }
+
+.--round-border-right {
+  border-top-right-radius: 0.6rem !important;
+  border-bottom-right-radius: 0.6rem !important; }
+
+.--round-border-left {
+  border-top-left-radius: 0.6rem !important;
+  border-bottom-left-radius: 0.6rem !important; }
+
+/**
+ * Card info style
+ */
+.info {
+  padding: 15px 15px 25px 0px;
+  margin-bottom: 10px; }
+  .info .info__container {
+    padding: 0px 20px 0px 0px; }
+  .info .info__title {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #f9c80e;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+    border-bottom: 2.5px solid #d7d7d7; }
+  .info a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s ease-out; }
+  .info a:hover {
+    color: #4b94f2;
+    transition: 0.3s ease-in; }
+  .info .info__description {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 20px; }
+
+/**
+ * Card servicios style
+ */
+.card-servicios {
+  padding: 40px 0px; }
+  .card-servicios .info__beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px; }
+  .card-servicios p {
+    margin-bottom: 0px;
+    font-size: 14px; }
+  .card-servicios i {
+    color: lightgreen;
+    font-size: 24px;
+    padding-right: 10px; }
+
+/**
+ * Card Proyectos style
+ */
+.card-proyectos {
+  padding: 40px 0px;
+  height: 300px;
+  border-radius: .6rem;
+  margin: 20px 0px;
+  transition: 0.5s ease-out; }
+  .card-proyectos:hover {
+    height: 390px;
+    transition: 0.5s ease-in; }
+  .card-proyectos .info__title {
+    font-size: 35px; }
+  .card-proyectos .info__title a {
+    color: #d7d7d7; }
+  .card-proyectos .info__description {
+    color: #d7d7d7; }
+
+.card-proyectos--barber {
+  background-image: url(https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.card-proyectos--simplify {
+  background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.card-proyectos--HRMS {
+  background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.--dodgerBlue {
+  color: #4b94f2 !important; }
+
+.--jonquilYellow {
+  color: #f9c80e !important; }
+
+.texto-error .texto-error__404 h1 {
+  font-size: 150px;
+  text-align: center; }
+
+.texto-error .texto-error__leyenda {
+  text-align: center; }
+
+.img-error {
+  height: 450px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #4b94f2; }
+  .img-error a {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; }
+  .img-error .img404 {
+    width: 80%;
+    transition: 0.5s ease-out; }
+
+.img404:hover {
+  width: 90%;
+  transition: 0.5s ease-in; }

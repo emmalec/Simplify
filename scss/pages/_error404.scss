@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// TStyles de la pagina error 404.
+// -----------------------------------------------------------------------------
+
+.texto-error{
+    
+    .texto-error__404 h1{
+        font-size: 150px;
+        text-align: center;
+    }
+
+    .texto-error__leyenda {
+        text-align: center;
+    }
+}
+
+.img-error {
+
+    height: $fix-height*1.5;
+    margin: 0px;
+    padding: 0px;
+    background-color: $brand-dodgerBlue;
+    
+    a{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .img404 {
+        width: 80%;
+        transition: 0.5s ease-out;
+    }
+
+}
+
+.img404:hover {
+    width: 90%;
+    transition: 0.5s ease-in;
+}
