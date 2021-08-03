@@ -232,6 +232,21 @@ p {
 .--jonquilYellow {
   color: #f9c80e !important; }
 
+.--btn-yellow-transition {
+  background-color: #f9c80e;
+  border-color: #f9c80e;
+  font-family: proxima-nova, sans-serif;
+  color: #000;
+  transition: all 0.3s ease 0s;
+  margin-top: 10px; }
+  .--btn-yellow-transition:hover {
+    background-color: #4b94f2;
+    border-color: #4b94f2;
+    box-shadow: 0px 15px 20px rgba(107, 110, 109, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease 0s; }
+
 .texto-error .texto-error__404 h1 {
   font-size: 150px;
   text-align: center; }

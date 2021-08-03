@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+
+.--btn-yellow-transition {
+    background-color: $brand-jonquilYellow;
+    border-color: $brand-jonquilYellow;
+    font-family: $proxima-nova;
+    color: #000;
+    transition: all 0.3s ease 0s;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $brand-dodgerBlue;
+        border-color: $brand-dodgerBlue;
+        box-shadow: 0px 15px 20px rgba(107, 110, 109, 0.4);
+        color: #fff;
+        transform: translateY(-5px);
+        transition: all 0.3s ease 0s;
+    }
+}
