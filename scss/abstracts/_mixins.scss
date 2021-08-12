@@ -17,3 +17,17 @@
     margin-right: auto;
     }
 }
+
+//Mixin to include on jumbotron mobile
+
+@mixin drop-shadow {
+    @media (max-width: 700px) {
+    filter: drop-shadow( 0.5rem 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+@mixin text-shadow {
+    @media (max-width: 700px) {
+        text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

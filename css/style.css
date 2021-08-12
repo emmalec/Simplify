@@ -129,8 +129,10 @@ p {
     background: #E9ECEF;
     box-shadow: 1rem -1rem #6592F8;
     transition: box-shadow 0.3s ease-in-out;
-    filter: drop-shadow(0.25rem 0.25rem 0.5rem #9c9c9c);
     border-radius: 28px; } }
+  @media (min-width: 0px) and (max-width: 768px) and (max-width: 700px) {
+    .jumbotron {
+      filter: drop-shadow(0.5rem 4px 4px rgba(0, 0, 0, 0.25)); } }
 
 .mainHello .mainHello__title {
   font-family: sofia-pro, sans-serif;
