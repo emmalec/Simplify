@@ -5,9 +5,18 @@
 .info {
     padding: 15px 15px 25px 0px;
     margin-bottom: 10px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .info__container {
         padding: 0px 20px 0px 0px;
+    }
+
+    .info__icon {
+        font-size: 4rem;
+        text-align: center;
+        color: $brand-violet;
+        @include drop-shadowDown;
     }
 
     .info__title {

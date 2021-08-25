@@ -21,6 +21,7 @@
 }
 
 .navbar-brand{
+    @include drop-shadowDown;
     margin-left: 5% !important;
     img{
     width: 80%;

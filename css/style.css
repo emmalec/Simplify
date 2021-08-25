@@ -88,6 +88,7 @@ p {
   padding: -0px 15px 0px 15px; }
 
 .navbar-brand {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: 5% !important; }
   .navbar-brand img {
     width: 80%; }
@@ -102,15 +103,51 @@ p {
   background-color: rgba(234, 236, 234, 0.4);
   border-radius: .6rem;
   margin: 40px 0px 40px 0px; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .section-servicios {
+      margin-left: 2.2rem;
+      margin-right: 1.8rem;
+      margin-top: 1.8rem;
+      background: #fff;
+      box-shadow: #F9C80E 0px 0px 0px 2px inset, white 10px -10px 0px -3px, #f9c80e 10px -10px;
+      transition: box-shadow 0.3s ease-in-out;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 28px;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 15.3rem; }
+      .section-servicios .my-4 {
+        display: none; }
+      .section-servicios .section-servicios__btn {
+        display: none; } }
   .section-servicios .section-servicios__title {
     font-family: sofia-pro, sans-serif;
+    font-weight: 500;
     font-size: 35px;
     color: #6566cc;
-    padding-top: 35px;
+    padding-top: 2.6rem;
     margin: 0%; }
+    @media (min-width: 0px) and (max-width: 768px) {
+      .section-servicios .section-servicios__title {
+        font-family: sofia-pro, sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 33px;
+        /* or 112% */
+        color: #6566cc; } }
   .section-servicios .section-servicios__text {
-    font-family: proxima-nova,sans-serif;
-    margin: 20px 0px 20px 0px; }
+    font-family: proxima-nova, sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+    @media (min-width: 0px) and (max-width: 768px) {
+      .section-servicios .section-servicios__text {
+        width: 80%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        /* or 100% */
+        color: #4B94F2; } }
   .section-servicios strong {
     font-family: sofia-pro, sans-serif;
     color: #4b94f2;
@@ -125,11 +162,13 @@ p {
   .jumbotron {
     margin-left: 2.2rem;
     margin-right: 1.8rem;
-    margin-top: 1.8rem;
+    margin-top: 2.8rem;
     background: #E9ECEF;
     box-shadow: 1rem -1rem #6592F8;
     transition: box-shadow 0.3s ease-in-out;
-    border-radius: 28px; } }
+    border-radius: 28px;
+    height: 22rem;
+    align-items: center; } }
   @media (min-width: 0px) and (max-width: 768px) and (max-width: 700px) {
     .jumbotron {
       filter: drop-shadow(0.5rem 4px 4px rgba(0, 0, 0, 0.25)); } }
@@ -140,8 +179,8 @@ p {
   font-weight: 900; }
   @media (min-width: 0px) and (max-width: 768px) {
     .mainHello .mainHello__title {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
       /* or 100% */
       letter-spacing: -1px; } }
 
@@ -151,10 +190,12 @@ p {
   color: #4b94f2; }
   @media (min-width: 0px) and (max-width: 768px) {
     .mainHello .mainHello__sub {
-      font-size: 14px;
-      line-height: 14.5px;
+      padding-top: 1rem;
+      font-size: 1rem;
+      line-height: 1rem;
       padding-right: 2rem;
-      padding-top: 1rem; } }
+      padding-top: 1.5rem;
+      padding-bottom: 2rem; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
   .mainHello .mainHello__text {
@@ -188,9 +229,17 @@ p {
  */
 .info {
   padding: 15px 15px 25px 0px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   .info .info__container {
     padding: 0px 20px 0px 0px; }
+  .info .info__icon {
+    font-size: 4rem;
+    text-align: center;
+    color: #6566cc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
   .info .info__title {
     font-family: sofia-pro, sans-serif;
     font-weight: 600;
@@ -213,6 +262,45 @@ p {
     line-height: 20px;
     color: #000;
     margin-bottom: 20px; }
+
+.info {
+  margin: 0px; }
+  @media (max-width: 700px) {
+    .info {
+      display: flex;
+      flex-direction: row;
+      margin-left: 1.8rem;
+      margin-right: 1.8rem;
+      margin-top: 1.8rem;
+      background: #fff;
+      transition: box-shadow 0.3s ease-in-out;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 28px;
+      padding-left: 30px;
+      padding-right: 30px;
+      align-items: center; }
+      .info .info__container {
+        padding: 0px; }
+      .info .info__icon {
+        font-size: 2.5rem;
+        color: #6566cc;
+        vertical-align: middle;
+        padding: 2rem 0rem 2rem 0rem; }
+      .info .info__title {
+        border: none;
+        margin: 0px;
+        padding: 0rem 0rem 0rem 1rem; }
+        .info .info__title a {
+          font-family: sofia-pro, sans-serif;
+          font-weight: 400;
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          /* or 107% */
+          color: #4b94f2; }
+      .info .info__description {
+        display: none; }
+      .info .mas__button {
+        display: none; } }
 
 /**
  * Card servicios style
@@ -281,7 +369,7 @@ p {
   font-family: proxima-nova, sans-serif;
   color: #000;
   transition: all 0.3s ease 0s;
-  margin-top: 10px; }
+  margin-top: 1.5rem; }
   .--btn-yellow-transition:hover {
     background-color: #4b94f2;
     border-color: #4b94f2;

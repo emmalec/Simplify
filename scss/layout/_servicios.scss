@@ -3,21 +3,69 @@
  */
 
 .section-servicios {
+
+    @media (min-width: 0px) and (max-width: 768px ) {
+        margin-left: 2.2rem;
+        margin-right: 1.8rem;
+        margin-top: 1.8rem;
+        background: #fff;
+        box-shadow: #F9C80E 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(249, 200, 14) 10px -10px, ;
+        transition: box-shadow 0.3s ease-in-out;
+        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
+        @include drop-shadowDown;
+        border-radius: 28px;
+        // border: solid 2px;
+        // border-color: $brand-jonquilYellow;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 15.3rem;
+
+        .my-4 {
+            display: none;
+        }
+
+        .section-servicios__btn {
+            display: none;
+        }
+    }
+
     background-color: hsla(120, 5%, 92%, 0.4);
     border-radius: .6rem;
     margin: 40px 0px 40px 0px;
 
     .section-servicios__title {
-        font-family: sofia-pro, sans-serif;
+        font-family: $sofia-pro;
+        font-weight: $medium;
         font-size: 35px;
-        color: #6566cc;
-        padding-top: 35px;
+        color: $brand-violet;
+        padding-top: 2.6rem;
         margin: 0%;
+
+        @media (min-width: 0px) and (max-width: 768px ) {
+
+            font-family: $sofia-pro;
+            font-weight: $medium;
+            font-size: 30px;
+            line-height: 33px;
+            /* or 112% */
+            color: $brand-violet;
+            
+        }
     }
 
     .section-servicios__text {
-        font-family: proxima-nova,sans-serif;
-        margin: 20px 0px 20px 0px;
+        font-family: $proxima-nova;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        @media (min-width: 0px) and (max-width: 768px ) {
+            width: 80%;
+            font-family: $proxima-nova;
+            font-weight: $regular;
+            font-size: 1rem;
+            line-height: 1rem;
+            /* or 100% */
+            color: #4B94F2;
+        }
     }
 
         strong {
