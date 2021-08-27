@@ -3,6 +3,29 @@
  */
 
 .jumbotron {
+
+    position: relative;
+    overflow: hidden;
+    background-color:black;
+    padding: 0px;
+    margin-top: 5rem;
+
+    .heroVideo {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        opacity:0.5;
+      }
+
+    .heroContainer {
+        z-index: 2;
+        position: relative;
+    }   
+
+
     @media (min-width: 0px) and (max-width: 768px ) {
         margin-left: 2.2rem;
         margin-right: 1.8rem;
@@ -14,22 +37,21 @@
         @include drop-shadow;
         border-radius: 28px;
         height: 22rem;
-
-
         align-items: center;
     }
 
-    .heroVideo {
-        width: 110%;
-        height: 110%;
-    }
+    
 }
+
+
 
 .mainHello{
 
     //para seguir el diseño del roundboder descomentar esto.
     // background-color: whitesmoke;
     // padding-left: 1rem;
+
+    padding: 3rem 0rem 3rem 0rem;
 
     .mainHello__title{
     font-family: $sofia-pro;
