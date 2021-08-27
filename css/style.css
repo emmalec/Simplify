@@ -162,8 +162,7 @@ p {
   position: relative;
   overflow: hidden;
   background-color: black;
-  padding: 0px;
-  margin-top: 5rem; }
+  padding: 0rem; }
   .jumbotron .heroVideo {
     position: absolute;
     z-index: 1;
@@ -171,10 +170,12 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5; }
+    opacity: 0.3; }
   .jumbotron .heroContainer {
     z-index: 2;
-    position: relative; }
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
   @media (min-width: 0px) and (max-width: 768px) {
     .jumbotron {
       margin-left: 2.2rem;
@@ -195,7 +196,11 @@ p {
   .mainHello .mainHello__title {
     font-family: sofia-pro, sans-serif;
     font-style: normal;
-    font-weight: 900; }
+    font-weight: 900;
+    color: #4b94f2;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
     @media (min-width: 0px) and (max-width: 768px) {
       .mainHello .mainHello__title {
         font-size: 2.5rem;
@@ -205,7 +210,9 @@ p {
   .mainHello .mainHello__sub {
     font-family: proxima-nova, sans-serif;
     font-weight: 500;
-    color: #4b94f2; }
+    color: #E9ECEF;
+    width: 70%;
+    padding-top: 1.5rem; }
     @media (min-width: 0px) and (max-width: 768px) {
       .mainHello .mainHello__sub {
         padding-top: 1rem;
@@ -225,10 +232,16 @@ p {
     .mainHello .my-4 {
       display: none; } }
 
-.mainHello__img {
-  padding: 0px !important; }
+.mainHello__vid {
+  display: flex;
+  transform: scale(1.1);
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 700px) {
+    .mainHello__vid {
+      filter: drop-shadow(0.5rem 4px 4px rgba(0, 0, 0, 0.25)); } }
   @media (min-width: 0px) and (max-width: 768px) {
-    .mainHello__img {
+    .mainHello__vid {
       display: none; } }
 
 .--round-border-right {
