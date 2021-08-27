@@ -4,6 +4,34 @@
 
 .section-servicios {
 
+    @include desktop-break {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        background-color: hsla(120, 5%, 92%, 1);
+        border-radius: .6rem;
+        margin: 40px 0px 40px 0px;
+        height: 19rem;
+        position: relative;
+        
+        &:after {
+        background-color: $brand-jonquilYellow;
+        border-radius: .6rem;
+        content: "";
+        height: 19rem;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translate(0px, 0px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+        }
+
+        &:hover:after {
+        transform: translate(8px, 8px);
+        // box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        }
+    }    
+
     @media (min-width: 0px) and (max-width: 768px ) {
         margin-left: 2.2rem;
         margin-right: 1.8rem;
@@ -29,9 +57,7 @@
         }
     }
 
-    background-color: hsla(120, 5%, 92%, 0.4);
-    border-radius: .6rem;
-    margin: 40px 0px 40px 0px;
+    
 
     .section-servicios__title {
         font-family: $sofia-pro;
