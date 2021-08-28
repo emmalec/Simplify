@@ -3,17 +3,32 @@
  */
 
 .info {
-    padding: 15px 15px 25px 0px;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: #E9ECEF;
+    //box-shadow: 1rem -1rem #6592F8;
+    transition: box-shadow 0.3s ease-in-out;
+    //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
+    @include drop-shadowDown;
+    border-radius: 28px;
+    // border: solid 2px;
+    // border-color: $brand-jonquilYellow;
+    //alinear los items
+    align-items: center;
+    padding: 1rem;
+
+    height: auto;
+
+
+
     .info__container {
         padding: 0px 20px 0px 0px;
     }
 
     .info__icon {
-        font-size: 4rem;
+        font-size: 3rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
         text-align: center;
         color: $brand-violet;
         @include drop-shadowDown;

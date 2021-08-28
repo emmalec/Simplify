@@ -1,22 +1,25 @@
 /**
- * Section servicios style
+ * Cards que se muestran en el Home 
  */
 
-.section-servicios {
+ .cardHome {
 
     @include desktop-break {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         background-color: hsla(120, 5%, 92%, 1);
-        border-radius: .6rem;
+        border-radius: 1.75rem;
         margin: 40px 0px 40px 0px;
-        height: 19rem;
+        height: auto;
         position: relative;
+
+        display: flex;
+        flex-direction: row;
         
         &:after {
         background-color: $brand-jonquilYellow;
-        border-radius: .6rem;
+        border-radius: 1.75rem;
         content: "";
-        height: 19rem;
+        height: 100%;
         left: 0;
         width: 100%;
         position: absolute;
@@ -52,47 +55,57 @@
             display: none;
         }
 
-        .section-servicios__btn {
+        .cardHome__btn {
             display: none;
         }
     }
 
     
+    .cardHome__container {
 
-    .section-servicios__title {
-        font-family: $sofia-pro;
-        font-weight: $medium;
-        font-size: 35px;
-        color: $brand-violet;
-        padding-top: 2.6rem;
-        margin: 0%;
+        padding: 2.6875rem 0rem 1.75rem 1.75rem;
 
-        @media (min-width: 0px) and (max-width: 768px ) {
-
-            font-family: $sofia-pro;
-            font-weight: $medium;
-            font-size: 30px;
-            line-height: 33px;
-            /* or 112% */
-            color: $brand-violet;
+        @include desktop-break {
+            width: 60%;
             
         }
-    }
 
-    .section-servicios__text {
-        font-family: $proxima-nova;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-        @media (min-width: 0px) and (max-width: 768px ) {
-            width: 80%;
-            font-family: $proxima-nova;
-            font-weight: $regular;
-            font-size: 1rem;
-            line-height: 1rem;
-            /* or 100% */
-            color: #4B94F2;
+        .cardHome__container__title {
+            font-family: $sofia-pro;
+            font-weight: $medium;
+            font-size: 35px;
+            color: $brand-violet;
+            margin: 0%;
+
+            @include mobile-break {
+
+                font-family: $sofia-pro;
+                font-weight: $medium;
+                font-size: 30px;
+                line-height: 33px;
+                /* or 112% */
+                color: $brand-violet;
+                
+            }
         }
-    }
+
+
+
+        .cardHome__container__text {
+
+            font-family: $proxima-nova;
+            
+            @include mobile-break {
+                width: 80%;
+                font-family: $proxima-nova;
+                font-weight: $regular;
+                font-size: 1rem;
+                line-height: 1rem;
+                /* or 100% */
+                color: #4B94F2;
+            }
+        }
+    }  
 
         strong {
             font-family: sofia-pro, sans-serif;
@@ -100,8 +113,19 @@
             font-weight: 400;
     } 
 
-    .section-servicios__btn {
-        margin-bottom: 20px;
+    .cardHome__btn {
+
+        @include desktop-break {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        a {
+            width: 50%;
+        }
     }
 
 }
