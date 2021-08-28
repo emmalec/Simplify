@@ -2,7 +2,7 @@
 
 .pages-hero{
 
-    @media (min-width: 0px) and (max-width: 768px ) {
+    @include mobile-break  {
         margin-left: 2.2rem;
         margin-right: 1.8rem;
         margin-top: 1.8rem;

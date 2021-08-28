@@ -35,7 +35,7 @@
 
         .info__title {
 
-            border: none;
+            
             margin: 0px;
             padding:2rem 0rem 0rem 2rem;
             width: 70%;
@@ -52,13 +52,17 @@
             }
         }
 
+
         .info__description {
             font-family: $proxima-nova;
             font-style: normal;
             font-weight: $regular;
+            color: grey;
             font-size: 0.813rem;
             line-height: 0.813rem;
             padding: 0rem 2rem 1rem 2rem;
+            width: 85%;
+            
         }
 
         .info__beneficios {

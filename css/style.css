@@ -444,7 +444,7 @@ p {
     transform: translateY(-5px);
     transition: all 0.3s ease 0s; }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .pages-hero {
     margin-left: 2.2rem;
     margin-right: 1.8rem;
@@ -530,7 +530,6 @@ p {
         vertical-align: middle;
         padding: 2rem 0rem 2rem 0rem; }
       .info--large .info__title {
-        border: none;
         margin: 0px;
         padding: 2rem 0rem 0rem 2rem;
         width: 70%;
@@ -545,9 +544,11 @@ p {
         font-family: proxima-nova, sans-serif;
         font-style: normal;
         font-weight: 400;
+        color: grey;
         font-size: 0.813rem;
         line-height: 0.813rem;
-        padding: 0rem 2rem 1rem 2rem; }
+        padding: 0rem 2rem 1rem 2rem;
+        width: 85%; }
       .info--large .info__beneficios {
         display: none; } }
 
