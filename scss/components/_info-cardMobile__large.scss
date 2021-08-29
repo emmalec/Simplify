@@ -1,7 +1,5 @@
 .info--large {
 
-    margin: 0px;
-
     @include mobile-break {
         display: flex;
         flex-direction: row;
@@ -69,13 +67,9 @@
             display: none;
         }
 
-    }
-}
+        .info__img {
+            display: none;
+        }
 
-//Para sacar la img
-
-@include mobile-break {
-    .img-servicios-card {
-        display: none;
     }
 }

@@ -1,0 +1,103 @@
+//Styling para las cards de titulos en las pages de la vista mobile
+
+.pages-hero{
+
+    @include desktop-break{
+
+        position: relative;
+        overflow: hidden;
+        background-color:black;
+        padding: 0rem;
+
+        .imgHero {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            opacity:0.3;
+        }
+
+        .pages-hero__container {
+            z-index: 2;
+            position: relative;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .pages-hero__title {
+        font-family: $sofia-pro;
+        font-style: normal;
+        font-weight: $black;
+        color: $brand-dodgerBlue;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        @include drop-shadowDown;
+    }
+
+    .pages-hero__text {
+        font-family: $proxima-nova;
+        font-weight: $medium;
+        color: #E9ECEF;
+        width: 70%;
+        padding-top: 1.5rem;
+    }
+
+
+
+    @include mobile-break  {
+
+        .pages-hero__container {
+
+            margin-left: 2.2rem;
+            margin-right: 1.8rem;
+            margin-top: 1.8rem;
+            background: #fff;
+            box-shadow: #F9C80E 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(249, 200, 14) 10px -10px, ;
+            transition: box-shadow 0.3s ease-in-out;
+            //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
+            @include drop-shadowDown;
+            border-radius: 28px;
+            // border: solid 2px;
+            // border-color: $brand-jonquilYellow;
+            padding-left: 30px;
+            padding-right: 30px;
+            height: auto;
+        }
+        
+        .imgHero {
+            display: none;
+        }
+
+        .pages-hero__title {
+            font-family: $sofia-pro;
+            font-style: normal;
+            font-weight: $bold;
+            font-size: 1.875rem;
+            line-height: 2.063rem;
+            text-align: center;
+            color: $brand-violet;
+
+            padding: 2.688rem 1.813rem 1rem 1.813rem ;
+        }
+
+        .pages-hero__text {
+            font-family: $proxima-nova;
+            font-weight: $regular;
+            font-size: 1rem;
+            line-height: 1rem;
+            color: $brand-dodgerBlue;
+        }
+
+        .my-4 {
+            display: none;
+        }
+
+        .section-servicios__btn {
+            display: none;
+        }
+    }
+}
+
