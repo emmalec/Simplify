@@ -63,8 +63,27 @@
             font-size: 14px;
             line-height: 20px;
             color: #000;
-            margin-bottom: 20px;
             
+        }
+
+        .info__beneficios {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            i {
+                color: grey;
+                font-size: 1.2rem;
+            }
+            
+            p {
+                margin: 0;
+                padding-left: 1rem;
+            }
+
         }
 
         .info__img {

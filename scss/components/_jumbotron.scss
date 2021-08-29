@@ -39,7 +39,7 @@
         //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadow;
         border-radius: 28px;
-        height: 22rem;
+        height: auto;
         align-items: center;
 
         .heroVideo {

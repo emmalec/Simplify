@@ -41,8 +41,9 @@
         font-family: $proxima-nova;
         font-weight: $medium;
         color: #E9ECEF;
-        width: 70%;
+        width: 40%;
         padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
 
@@ -51,7 +52,7 @@
 
         .pages-hero__container {
 
-            margin-left: 2.2rem;
+            margin-left: 1.8rem;
             margin-right: 1.8rem;
             margin-top: 1.8rem;
             background: #fff;
@@ -65,6 +66,7 @@
             padding-left: 30px;
             padding-right: 30px;
             height: auto;
+            width: auto;
         }
         
         .imgHero {
@@ -79,6 +81,7 @@
             line-height: 2.063rem;
             text-align: center;
             color: $brand-violet;
+            margin-bottom: 0px;
 
             padding: 2.688rem 1.813rem 1rem 1.813rem ;
         }
@@ -89,6 +92,10 @@
             font-size: 1rem;
             line-height: 1rem;
             color: $brand-dodgerBlue;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 1rem 0rem 1rem 0rem;
         }
 
         .my-4 {
