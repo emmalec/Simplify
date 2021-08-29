@@ -5,6 +5,8 @@
  .cardHome {
 
     @include desktop-break {
+
+
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         background-color: hsla(120, 5%, 92%, 1);
         border-radius: 1.75rem;
@@ -17,13 +19,15 @@
         align-items: center;
         justify-content: space-around;
         
+    
+
         &:after {
         background-color: $brand-jonquilYellow;
         border-radius: 1.75rem;
         content: "";
         height: 100%;
-        left: 0;
         width: 100%;
+        left: 0;
         position: absolute;
         top: 0;
         transform: translate(0px, 0px);
@@ -31,6 +35,7 @@
         z-index: -1;
         }
 
+        
         &:hover:after {
         transform: translate(8px, 8px);
         // box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
