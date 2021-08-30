@@ -42,7 +42,7 @@
         }
     }    
 
-    @media (min-width: 0px) and (max-width: 768px ) {
+    @include mobile-break{
         margin-left: 2.2rem;
         margin-right: 1.8rem;
         margin-top: 1.8rem;
@@ -51,19 +51,24 @@
         transition: box-shadow 0.3s ease-in-out;
         //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
-        border-radius: 28px;
-        // border: solid 2px;
-        // border-color: $brand-jonquilYellow;
+        border-radius: 1.75rem;
         padding-left: 30px;
         padding-right: 30px;
         height: auto;
+
+        display: flex;
+        flex-direction: column;
 
         .my-4 {
             display: none;
         }
 
         .cardHome__btn {
-            display: none;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+            margin: 0px;
+
         }
     }
 
@@ -74,7 +79,10 @@
 
         @include desktop-break {
             width: 60%;
-            
+        }
+
+        @include mobile-break {
+            padding: 2rem 0rem;
         }
 
         .cardHome__container__title {
@@ -90,8 +98,10 @@
                 font-weight: $medium;
                 font-size: 30px;
                 line-height: 33px;
-                /* or 112% */
                 color: $brand-violet;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
                 
             }
         }
