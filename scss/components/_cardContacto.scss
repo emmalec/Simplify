@@ -19,10 +19,6 @@
         padding-left: 2rem;
         height: auto;
 
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
-        // justify-content: space-around;
 
         .cardContacto__title {
             font-family: $sofia-pro;
@@ -39,7 +35,7 @@
                     
     }    
 
-    @media (min-width: 0px) and (max-width: 768px ) {
+    @include mobile-break {
         margin-left: 2.2rem;
         margin-right: 1.8rem;
         margin-top: 1.8rem;
@@ -47,13 +43,10 @@
         background: #fff;
         box-shadow: #F9C80E 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(249, 200, 14) 10px -10px, ;
         transition: box-shadow 0.3s ease-in-out;
-        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
-        border-radius: 28px;
-        // border: solid 2px;
-        // border-color: $brand-jonquilYellow;
-        padding-left: 30px;
-        padding-right: 30px;
+        border-radius: 1.75rem;
+        padding-left: 20px;
+        padding-right: 20px;
         height: auto;
 
         .cardContacto__title {
@@ -70,11 +63,5 @@
             display: flex;
             justify-content: center;
         }
-
-        
-    }
-
-    
-    
-
+    }  
 }

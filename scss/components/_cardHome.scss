@@ -39,7 +39,6 @@
         
         &:hover:after {
         transform: translate(8px, 8px);
-        // box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         }
     }    
 
@@ -51,7 +50,6 @@
         background: #fff;
         box-shadow: #F9C80E 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(249, 200, 14) 10px -10px, ;
         transition: box-shadow 0.3s ease-in-out;
-        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
         border-radius: 1.75rem;
         padding: 2.6875rem 1.75rem 1.75rem 1.75rem;
