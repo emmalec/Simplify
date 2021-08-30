@@ -845,7 +845,7 @@ p {
 
 @media (max-width: 768px) {
   .cardHome .cardHome__container {
-    padding: 0rem 0rem; } }
+    padding-left: 1rem; } }
 
 .cardHome .cardHome__container .cardHome__container__title {
   font-family: sofia-pro, sans-serif;
