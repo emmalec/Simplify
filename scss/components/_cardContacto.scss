@@ -1,0 +1,80 @@
+//Card contactos
+
+/**
+ * Cards que se muestran en el Home 
+ */
+
+ .cardContacto {
+
+    @include desktop-break {
+
+
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        background-color: hsla(120, 5%, 92%, 1);
+        border-radius: 1.75rem;
+        margin: 40px 0px 40px 0px;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: auto;
+
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: space-around;
+
+        .cardContacto__title {
+            font-family: $sofia-pro;
+            font-weight: $medium;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .btn {
+            margin-top: 0px;
+        }
+
+                    
+    }    
+
+    @media (min-width: 0px) and (max-width: 768px ) {
+        margin-left: 2.2rem;
+        margin-right: 1.8rem;
+        margin-top: 1.8rem;
+        margin-bottom: 2.2rem;
+        background: #fff;
+        box-shadow: #F9C80E 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(249, 200, 14) 10px -10px, ;
+        transition: box-shadow 0.3s ease-in-out;
+        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
+        @include drop-shadowDown;
+        border-radius: 28px;
+        // border: solid 2px;
+        // border-color: $brand-jonquilYellow;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: auto;
+
+        .cardContacto__title {
+
+            font-family: $sofia-pro;
+            font-weight: $medium;
+            text-align: center;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    }
+
+    
+    
+
+}

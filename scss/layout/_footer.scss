@@ -6,34 +6,70 @@
  * Footer styling
  */
 
-.footer {
+.footer{
+
   background-color: $brand-dodgerBlue;
   font-family: $proxima-nova;
   color: azure;
-
-  .footer__text {
+  
+  .footer__container {
     display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
-    font-size: 0.8rem;
-    padding: 15px 15px 15px 0px;
 
-    svg {
-      width: 30%;
-      color: azure;
+
+    .footer__container__logo {
+
+        width: 15%;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      
+        svg {
+          width: auto;
+          font-size: 1rem;
+          color: azure;
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        @include mobile-break {
+          display: none;
+        }
     }
-    
-    p {
-      margin-bottom: 0px;
-      color: azure;
+
+    .footer__container__text {
+
+      p {
+        margin: 0px;
+        padding-left:1rem;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        color: azure;
+      }
+
+      @include mobile-break {
+        display: none;
+      }
     }
   }
- 
- 
+  
   .footer__social-icons {
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+      i {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
   }
+
+
 }

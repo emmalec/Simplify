@@ -11,7 +11,13 @@
       font-family: $sofia-pro;
       font-weight: $bold;
       text-align: center;
+
+      @include mobile-break {
+        font-size: 4rem;
+      }
     }
+
+
 }
 
 .text-pop-up-top {
