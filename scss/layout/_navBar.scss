@@ -1,29 +1,67 @@
 /**
  * NavBar style
  */
+
+
+// .navbar-nav .nav-item.active .nav-link,
+// .navbar-nav .nav-item:hover .nav-link {
+//     color: pink;
+// }
+
 .navbar-nav {
 
-    li{ 
-        border-right: 1px solid #646364ab;
+    .nav-item.active {
+
+        .nav-link {
+            color:$brand-dodgerBlue;
+        }
+    } 
+    
+    .nav-item:hover {
+        
+        .nav-link {
+           color: $brand-violet;
+           @include drop-shadowDown
+        }
+    }
+    
+
+    .nav-item{
+
+        .nav-link{
+        font-family: $proxima-nova;
+        font-weight: $regular;
+        font-style: normal;
+        font-size: 1.1rem;
+        color: $brand-dodgerBlue ;
+        padding-right: 1rem ;
+        padding-left: 1rem;
         }
 
-    li:last-child{
-        border-right: 0px;
-    }
-    a{
-    font-family: $proxima-nova;
-    font-weight: $regular;
-    font-style: normal;
-    font-size: 1.1rem;
-    color: $brand-dodgerBlue !important;
-    padding: -0px 15px 0px 15px;
+        &:focus {
+            color: $brand-violet;
+            @include drop-shadowDown
+        }
     }
 }
 
-.navbar-brand{
+.logotype {
     @include drop-shadowDown;
     margin-left: 5% !important;
-    img{
-    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 13vh;
+
+    svg {
+        width: auto;
+        height: auto;
+        color: $brand-dodgerBlue;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &:hover {
+            color: $brand-violet;
+        }
+         
   }
+
 }

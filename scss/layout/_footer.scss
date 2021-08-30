@@ -16,21 +16,19 @@
     align-items: center;
     font-size: 0.8rem;
     padding: 15px 15px 15px 0px;
+
+    svg {
+      width: 30%;
+      color: azure;
+    }
     
     p {
       margin-bottom: 0px;
       color: azure;
     }
   }
-  .footer__made-by {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    
-      p{
-        color: azure;
-    }
-  }
+ 
+ 
   .footer__social-icons {
     text-align: center;
     display: flex;
