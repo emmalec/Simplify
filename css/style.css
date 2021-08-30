@@ -559,7 +559,8 @@ p {
     padding: 1rem;
     height: auto; }
     .info--large .info__container {
-      padding: 0px 20px 0px 0px; }
+      padding: 0px 20px 0px 0px;
+      width: 70%; }
     .info--large .info__icon {
       font-size: 3rem;
       padding: 0.5rem 0rem 0.5rem 0rem;
@@ -575,7 +576,7 @@ p {
       margin-bottom: 20px;
       border-bottom: 2.5px solid #d7d7d7; }
     .info--large a {
-      color: #000;
+      color: #6566cc;
       text-decoration: none;
       transition: 0.5s ease-out; }
     .info--large a:hover {
@@ -595,14 +596,14 @@ p {
       margin-top: 1rem;
       margin-bottom: 1rem; }
       .info--large .info__beneficios i {
-        color: grey;
+        color: #4b94f2;
         font-size: 1.2rem; }
       .info--large .info__beneficios p {
         margin: 0;
         padding-left: 1rem; }
     .info--large .info__img {
       width: 70%;
-      padding: 2rem 2rem; }
+      padding: 1rem 1rem; }
     .info--large .my-4 {
       display: none; } }
 
@@ -783,7 +784,7 @@ p {
 @media (max-width: 768px) {
   .info--large {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 1.8rem;
@@ -836,6 +837,7 @@ p {
     margin: 40px 0px 40px 0px;
     height: auto;
     position: relative;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -865,11 +867,11 @@ p {
     transition: box-shadow 0.3s ease-in-out;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1.75rem;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2.6875rem 0rem 1.75rem 1.75rem;
     height: auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-around; }
     .cardHome .my-4 {
       display: none; }
     .cardHome .cardHome__btn {
@@ -878,40 +880,40 @@ p {
       padding-bottom: 1rem;
       margin: 0px; } }
 
-.cardHome .cardHome__container {
-  padding: 2.6875rem 0rem 1.75rem 1.75rem; }
-  @media (min-width: 768px) {
-    .cardHome .cardHome__container {
-      width: 60%; } }
+@media (min-width: 768px) {
+  .cardHome .cardHome__container {
+    width: 60%; } }
+
+@media (max-width: 768px) {
+  .cardHome .cardHome__container {
+    padding: 0rem 0rem; } }
+
+.cardHome .cardHome__container .cardHome__container__title {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  color: #6566cc;
+  margin: 0%; }
   @media (max-width: 768px) {
-    .cardHome .cardHome__container {
-      padding: 2rem 0rem; } }
-  .cardHome .cardHome__container .cardHome__container__title {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-size: 1.875rem;
-    color: #6566cc;
-    margin: 0%; }
-    @media (max-width: 768px) {
-      .cardHome .cardHome__container .cardHome__container__title {
-        font-family: sofia-pro, sans-serif;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 33px;
-        color: #6566cc;
-        padding-top: 1rem;
-        padding-bottom: 1rem; } }
-  .cardHome .cardHome__container .cardHome__container__text {
-    font-family: proxima-nova, sans-serif; }
-    @media (max-width: 768px) {
-      .cardHome .cardHome__container .cardHome__container__text {
-        width: 80%;
-        font-family: proxima-nova, sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1rem;
-        /* or 100% */
-        color: #4B94F2; } }
+    .cardHome .cardHome__container .cardHome__container__title {
+      font-family: sofia-pro, sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 33px;
+      color: #6566cc;
+      padding-bottom: 1rem; } }
+
+.cardHome .cardHome__container .cardHome__container__text {
+  font-family: proxima-nova, sans-serif; }
+  @media (max-width: 768px) {
+    .cardHome .cardHome__container .cardHome__container__text {
+      width: 80%;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1rem;
+      /* or 100% */
+      color: #4B94F2; } }
 
 .cardHome strong {
   font-family: sofia-pro, sans-serif;
@@ -933,7 +935,12 @@ p {
 .cardHome .cardHome__emoji {
   font-size: 5rem;
   text-align: center;
-  width: 30%; }
+  width: 30%;
+  padding: 0px;
+  margin: 0px; }
+  @media (max-width: 768px) {
+    .cardHome .cardHome__emoji {
+      font-size: 3rem; } }
 
 .headerLarge {
   margin-top: 3rem;

@@ -13,6 +13,7 @@
         margin: 40px 0px 40px 0px;
         height: auto;
         position: relative;
+        padding: 2rem;
 
         display: flex;
         flex-direction: row;
@@ -52,16 +53,18 @@
         //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
         border-radius: 1.75rem;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 2.6875rem 0rem 1.75rem 1.75rem;
         height: auto;
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
 
         .my-4 {
             display: none;
         }
+
+
 
         .cardHome__btn {
             display: flex;
@@ -75,14 +78,14 @@
     
     .cardHome__container {
 
-        padding: 2.6875rem 0rem 1.75rem 1.75rem;
+        
 
         @include desktop-break {
             width: 60%;
         }
 
         @include mobile-break {
-            padding: 2rem 0rem;
+            padding: 0rem 0rem;
         }
 
         .cardHome__container__title {
@@ -100,7 +103,6 @@
                 line-height: 33px;
                 color: $brand-violet;
 
-                padding-top: 1rem;
                 padding-bottom: 1rem;
                 
             }
@@ -148,6 +150,12 @@
         font-size: 5rem;
         text-align: center;
         width: 30%;
+        padding: 0px;
+        margin: 0px;
+
+        @include mobile-break {
+            font-size: 3rem;
+        }
 
     }
 

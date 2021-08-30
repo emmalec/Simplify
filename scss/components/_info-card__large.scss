@@ -10,14 +10,9 @@
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
         background: #E9ECEF;
-        //box-shadow: 1rem -1rem #6592F8;
         transition: box-shadow 0.3s ease-in-out;
-        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
         border-radius: 28px;
-        // border: solid 2px;
-        // border-color: $brand-jonquilYellow;
-        //alinear los items
         align-items: center;
         padding: 1rem;
         height: auto;
@@ -26,6 +21,7 @@
 
         .info__container {
             padding: 0px 20px 0px 0px;
+            width: 70%;
         }
 
         .info__icon {
@@ -47,7 +43,7 @@
         }
 
             a {
-                color: #000;
+                color:$brand-violet;
                 text-decoration: none;
                 transition: 0.5s ease-out;
             }
@@ -75,7 +71,7 @@
             margin-bottom: 1rem;
 
             i {
-                color: grey;
+                color: $brand-dodgerBlue;
                 font-size: 1.2rem;
             }
             
@@ -88,7 +84,7 @@
 
         .info__img {
             width: 70%;
-            padding: 2rem 2rem;
+            padding: 1rem 1rem;
         }
 
         .my-4 {

@@ -1,20 +1,16 @@
 .info--large {
 
     @include mobile-break {
+
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         margin-top: 1.8rem;
         background: #E9ECEF;
-        //box-shadow: 1rem -1rem #6592F8;
         transition: box-shadow 0.3s ease-in-out;
-        //filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(156, 156, 156));
         @include drop-shadowDown;
         border-radius: 28px;
-        // border: solid 2px;
-        // border-color: $brand-jonquilYellow;
-        //alinear los items
         align-items: center;
 
         height: auto;
