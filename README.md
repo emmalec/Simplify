@@ -10,4 +10,5 @@ Sass
 Bootstrap
 AOS
 Animate
+Adobe Fonts
 
