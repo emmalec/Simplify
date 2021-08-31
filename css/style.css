@@ -390,7 +390,8 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem; }
     .footer .footer__social-icons i:hover {
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      cursor: pointer; }
 
 /**
  * NavBar style
